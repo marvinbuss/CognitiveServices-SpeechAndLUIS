@@ -31,9 +31,8 @@ namespace SpeechServiceTesting
                         var i = 1;
                         foreach (var item in result.Best())
                         {
-                            Console.WriteLine($"Result: {i}");
-                            Console.WriteLine($"Recognized: {item.MaskedNormalizedForm}");
-                            Console.WriteLine($"Confidence: {item.Confidence}");
+                            Console.WriteLine($"{i} Recognized: {item.MaskedNormalizedForm}");
+                            Console.WriteLine($"{i} Confidence: {item.Confidence}");
                             i++;
                         }
                     }

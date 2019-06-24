@@ -18,6 +18,8 @@ namespace SpeechServiceTesting
             while (true)
             {
                 // Instructions
+                Console.WriteLine("");
+                Console.WriteLine("-------------------------");
                 Console.WriteLine("Select a key to continue.");
                 Console.WriteLine("- Any key to do STT and NLU");
                 Console.WriteLine("- Esc to end");
