@@ -5,14 +5,14 @@ This small and lightweight tool can be used to quickly test the capabilities of 
 Also, this tool can be used to quickly add sample utterances to your LUIS model via voice. This is generally much quicker than typing sample utterances in LUIS. The console application is written in .NET Core 2.2 and is adaptible by changing the settings and subscription keys in the `appsettings.json` file, even after compiling the solution.
 
 # Download of Compiled Application
-If you do not want to compile the solution yourself, you can just download a compiled version for Windows x64 Systems. Just hit the download button. If you download this version, you will still be able to change the settings of your application. Download the solution by using the follwing link: [Download Link](SpeechServiceTesting/compiled/win-x64.zip)
+If you do not want to compile the solution yourself, you can just download a compiled version for Windows x64 Systems. Just hit the download button. If you download this version, you will still be able to change the settings of your application. Download the solution by using the following link: [Download Link](SpeechServiceTesting/compiled/win-x64.zip)
 
 # Setup of Speech and LUIS
 Before we start, make sure that you have access to the [Speech Service](https://azure.microsoft.com/en-us/services/cognitive-services/speech-services) as well as [LUIS](https://eu.luis.ai), which are part of the Microsoft Cognitive Services. I you are not sure, you can create a new resource for each of them in the Azure Portal:
 - [Speech](https://portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices)
 - [LUIS](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesLUIS)
 
-Select `West Europe`, if you are not sure which region to choose.
+Select `West Europe`, if you are not sure which region to choose. After creating both resources, you have to create a LUIS App. Please follow [these](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/get-started-portal-build-app) steps to do so.
 
 **NOTE:** When deploying the services on Azure, please take note of the selected region. This is very important for later use of the app. Once the deployment was successful, please also take note of the subscription keys of the Cognitive Services.
 
@@ -32,7 +32,7 @@ The application writes log-files in the background. This enables you to analyze 
 ## SpeechToTextSettings
 This section contains all the settings for the Speech to Text functionality. The parameters in this section will have the following effect:
 
-- `ServiceRegion`: Set this parameter to the region to which you deplyoed your Cognitive Service.
+- `ServiceRegion`: Set this parameter to the region to which you deployed your Cognitive Service.
 - `SubscriptionKey`: Set this parameter to your Speech Subscription Key. You can find the key in the Azure Portal.
 - `RecognitionLanguage`: Specifies the name of spoken language to be recognized in BCP-47 format. Set this value to the language that you would like to use for STT. A more comprehensive list of possible values can be found here: https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support
 - `DetailedOutput`: When `true` the console application also returns information about alternative transcriptions with lower confidence. This feature only works for a few languages such as `en-US`.
@@ -40,7 +40,7 @@ This section contains all the settings for the Speech to Text functionality. The
 ## LanguageUnderstandingSettings
 This section contains all the settings for the Natural Language Understanding functionality. The parameters in this section will have the following effect:
 
-- `ServiceRegion`: Set this parameter to the region to which you deplyoed your Cognitive Service.
+- `ServiceRegion`: Set this parameter to the region to which you deployed your Cognitive Service.
 - `EndpointPredictionkey`: Set this parameter to the Endpoint Prediction Key of your LUIS app. This key can be found in the app if you navigate to Manage > Keys and Endpoints > Key 1.
 - `AppId`: Set this parameter to the App ID of your LUIS app. This ID can be found in the app if you navigate to Manage > Application Information > Application ID.
 
