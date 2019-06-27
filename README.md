@@ -4,7 +4,7 @@ This small and lightweight tool can be used to quickly test the capabilities of 
 
 Also, this tool can be used to quickly add sample utterances to your LUIS model via voice. This is generally much quicker than typing sample utterances in LUIS. The console application is written in .NET Core 2.2 and is adaptible by changing the settings and subscription keys in the `appsettings.json` file, even after compiling the solution.
 
-# Compiled version
+# Download of Compiled Application
 If you do not want to compile the solution yourself, you can just download a compiled version for Windows x64 Systems. Just hit the download button. If you download this version, you will still be able to change the settings of your application. Download the solution by using the follwing link: [Download Link](SpeechServiceTesting/compiled/win-x64.zip)
 
 # Setup of Speech and LUIS
@@ -43,6 +43,7 @@ This section contains all the settings for the Natural Language Understanding fu
 - `EndpointPredictionkey`: Set this parameter to the Endpoint Prediction Key of your LUIS app. This key can be found in the app if you navigate to Manage > Keys and Endpoints > Key 1.
 - `AppId`: Set this parameter to the App ID of your LUIS app. This ID can be found in the app if you navigate to Manage > Application Information > Application ID.
 
+# Running the Application
 Once you have set all values, you can save and close the `appsettings.json` file. Now you can open the console application by double clicking on the `SpeechServiceTesting.exe`. This will open the console application. Here you have two options:
 - Click `Esc` to end the application
 - Click any other button on the keyboard to start the speech recognition.
