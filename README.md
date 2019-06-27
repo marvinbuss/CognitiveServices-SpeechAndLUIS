@@ -5,7 +5,7 @@ This small and lightweight tool can be used to quickly test the capabilities of 
 Also, this tool can be used to quickly add sample utterances to your LUIS model via voice. This is generally much quicker than typing sample utterances in LUIS. The console application is written in .NET Core 2.2 and is adaptible by changing the settings and subscription keys in the `appsettings.json` file, even after compiling the solution.
 
 # Compiled version
-If you do not want to compile the solution yourself, you can just download a compiled version for Windows x64 Systems. Just hit the download button. If you download this version, you will still be able to change the settings of your application. Download the solution by using the follwing link: [Download Link](compiled/win-x64.zip)
+If you do not want to compile the solution yourself, you can just download a compiled version for Windows x64 Systems. Just hit the download button. If you download this version, you will still be able to change the settings of your application. Download the solution by using the follwing link: [Download Link](SpeechServiceTesting/compiled/win-x64.zip)
 
 # Setup of Speech and LUIS
 Before we start, make sure that you have access to the [Speech Service](https://azure.microsoft.com/en-us/services/cognitive-services/speech-services) as well as [LUIS](https://eu.luis.ai), which are part of the Microsoft Cognitive Services. I you are not sure, you can create a new resource for each of them in the Azure Portal:
@@ -17,7 +17,7 @@ Select `West Europe`, if you are not sure which region to choose.
 
 # Changing Settings of the Application
 In this section, I will describe how to use the application and adjust the settings. If you downloaded the compiled version (`win-x64.zip`), you should first unzip the archive. Afterwards, you should see the following files in the unpacked folder:
-<img src="pictures/zipFiles.png" alt="Files in the zip-Archive" width="250"/>
+<img src="SpeechServiceTesting/pictures/zipFiles.png" alt="Files in the zip-Archive" width="250"/>
 
 Next, open the `appsettings.json` with Notepad or any other preferred tool. In this file, you can adjust the settings, so that the right speech and LUIS model is used. There are three important sections in this file: `Logging`, `SpeechToTextSettings` and `LanguageUnderstandingSettings`.
 
@@ -46,4 +46,4 @@ This section contains all the settings for the Natural Language Understanding fu
 Once you have set all values, you can save and close the `appsettings.json` file. Now you can open the console application by double clicking on the `SpeechServiceTesting.exe`. This will open the console application. Here you have two options:
 - Click `Esc` to end the application
 - Click any other button on the keyboard to start the speech recognition.
-<img src="pictures/ConsoleApp.png" alt="Screenshot of the Console Application" width="250"/>
+<img src="SpeechServiceTesting/pictures/ConsoleApp.png" alt="Screenshot of the Console Application" width="250"/>
