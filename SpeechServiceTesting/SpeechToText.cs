@@ -26,13 +26,15 @@ namespace SpeechServiceTesting
                 // Checks result.
                 if (result.Reason == ResultReason.RecognizedSpeech)
                 {
+                    Console.WriteLine($"");
+                    Console.WriteLine($"1. Speech to Text:");
                     if (detailedOutput)
                     {
                         var i = 1;
                         foreach (var item in result.Best())
                         {
-                            Console.WriteLine($"{i} Recognized: {item.MaskedNormalizedForm}");
-                            Console.WriteLine($"{i} Confidence: {item.Confidence}");
+                            Console.WriteLine($"({i}) Recognized: {item.MaskedNormalizedForm}");
+                            Console.WriteLine($"({i}) Confidence: {item.Confidence}");
                             i++;
                         }
                     }

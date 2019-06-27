@@ -23,13 +23,16 @@ namespace SpeechServiceTesting
 
             var prediction = new Prediction(luisClient);
             var result = prediction.ResolveWithHttpMessagesAsync(appId, query, timezoneOffset, verbose, staging, spellCheck, bingSpellCheckKey, log);
-            
+
             // display results
-            Console.WriteLine("Top intent is '{0}' with score {1}", result.Result.Body.TopScoringIntent.Intent, result.Result.Body.TopScoringIntent.Score);
-            var i = 0;
+            Console.WriteLine($"");
+            Console.WriteLine($"2. LUIS:");
+            Console.WriteLine("Top Intent: '{0}'", result.Result.Body.TopScoringIntent.Intent);
+            Console.WriteLine("Confidence: '{0}'", result.Result.Body.TopScoringIntent.Score);
+            var i = 1;
             foreach (var entity in result.Result.Body.Entities)
             {
-                Console.WriteLine("Entity {0} --> {1}:'{2}' (position {3} to {4})", i, entity.Type, entity.Entity, entity.StartIndex, entity.EndIndex);
+                Console.WriteLine("Entity {0} --> {1}:'{2}' (Position {3} to {4})", i, entity.Type, entity.Entity, entity.StartIndex, entity.EndIndex);
             }
             
             return result;
