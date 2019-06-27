@@ -17,7 +17,7 @@ Select `West Europe`, if you are not sure which region to choose.
 
 # Changing Settings of the Application
 In this section, I will describe how to use the application and adjust the settings. If you downloaded the compiled version (`win-x64.zip`), you should first unzip the archive. Afterwards, you should see the following files in the unpacked folder:
-<img src="SpeechServiceTesting/pictures/zipFiles.png" alt="Files in the zip-Archive" width="400"/>
+<img src="SpeechServiceTesting/pictures/zipFiles.png" alt="Files in the zip-Archive" width="500"/>
 
 Next, open the `appsettings.json` with Notepad or any other preferred tool. In this file, you can adjust the settings, so that the right speech and LUIS model is used. There are three important sections in this file: `Logging`, `SpeechToTextSettings` and `LanguageUnderstandingSettings`.
 
@@ -46,4 +46,4 @@ This section contains all the settings for the Natural Language Understanding fu
 Once you have set all values, you can save and close the `appsettings.json` file. Now you can open the console application by double clicking on the `SpeechServiceTesting.exe`. This will open the console application. Here you have two options:
 - Click `Esc` to end the application
 - Click any other button on the keyboard to start the speech recognition.
-<img src="SpeechServiceTesting/pictures/ConsoleApp.png" alt="Screenshot of the Console Application" width="500"/>
+<img src="SpeechServiceTesting/pictures/ConsoleApp.png" alt="Screenshot of the Console Application" width="800"/>
