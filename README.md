@@ -11,6 +11,7 @@ If you do not want to compile the solution yourself, you can just download a com
 Before we start, make sure that you have access to the [Speech Service](https://azure.microsoft.com/en-us/services/cognitive-services/speech-services) as well as [LUIS](https://eu.luis.ai), which are part of the Microsoft Cognitive Services. I you are not sure, you can create a new resource for each of them in the Azure Portal:
 - [Speech](https://portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices)
 - [LUIS](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesLUIS)
+
 Select `West Europe`, if you are not sure which region to choose.
 
 **NOTE:** When deploying the services on Azure, please take note of the selected region. This is very important for later use of the app. Once the deployment was successful, please also take note of the subscription keys of the Cognitive Services.
