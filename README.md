@@ -18,6 +18,7 @@ Select `West Europe`, if you are not sure which region to choose. After creating
 
 # Changing Settings of the Application
 In this section, I will describe how to use the application and adjust the settings. If you downloaded the compiled version (`win-x64.zip`), you should first unzip the archive. Afterwards, you should see the following files (and more) in the unpacked folder:
+
 <img src="SpeechServiceTesting/pictures/zipFiles.png" alt="Files in the zip-Archive" width="500"/>
 
 Next, open the `appsettings.json` with Notepad or any other preferred tool. In this file, you can adjust the settings, so that the right speech and LUIS model is used. There are three important sections in this file: `Logging`, `SpeechToTextSettings` and `LanguageUnderstandingSettings`.
